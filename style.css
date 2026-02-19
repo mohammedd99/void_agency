@@ -241,18 +241,19 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    height: 40%;
-    background: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
+    height: 60%;
+    /* Now high by default */
+    background: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 70%);
     filter: blur(4px);
     z-index: 1;
     pointer-events: none;
-    transition: opacity 0.3s ease, height 0.3s ease;
+    transition: opacity 0.3s ease, height 0.3s ease, background 0.3s ease;
 }
 
 .nav-btn:hover .btn-glow {
-    opacity: 1;
-    height: 60%;
-    background: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 70%);
+    height: 40%;
+    /* Decreased on hover */
+    background: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
 }
 
 /* Shine Sweep Animation */
