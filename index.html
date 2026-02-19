@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Hero Section</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Background Video -->
+        <div class="video-container">
+            <video autoplay loop muted playsinline class="video-bg">
+                <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260217_030345_246c0224-10a4-422c-b324-070b7c0eceda.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay"></div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-left">
+                <div class="logo">VOID</div>
+                <div class="nav-links">
+                    <a href="#" class="nav-link interactable">Showcase</a>
+                    <a href="#" class="nav-link interactable">Services</a>
+                    <a href="#" class="nav-link interactable">Studio</a>
+                    <a href="#" class="nav-link interactable">Inside</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <button class="glass-button nav-btn interactable desktop-only">
+                    <div class="btn-glow"></div>
+                    <span class="btn-text">Start a Project</span>
+                </button>
+                
+                <!-- Burger Menu Toggle -->
+                <button class="burger-menu" id="burger-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-content">
+                <a href="#" class="mobile-nav-link">Showcase</a>
+                <a href="#" class="mobile-nav-link">Services</a>
+                <a href="#" class="mobile-nav-link">Studio</a>
+                <a href="#" class="mobile-nav-link">Inside</a>
+                <button class="glass-button nav-btn">
+                    <div class="btn-glow"></div>
+                    <span class="btn-text">Start a Project</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <!-- Badge -->
+            <div class="badge reveal">
+                <div class="badge-dot"></div>
+                <span class="badge-text-faded">Now accepting select clients for</span>
+                <span class="badge-text-solid">Q3 2026</span>
+            </div>
+
+            <!-- Heading -->
+            <h1 class="hero-heading reveal">Beyond the Speed of Experience.</h1>
+
+            <!-- Subtitle -->
+            <p class="hero-subtitle reveal">From immersive 3D environments to high-fidelity brand identities, we specialize in the "too complex." VOID is where elite engineering meet cinematic vision.</p>
+
+            <!-- CTA Button -->
+            <button class="glass-button cta-btn interactable reveal">
+                <div class="btn-glow"></div>
+                <span class="btn-text">View Showcase</span>
+            </button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
